@@ -4,7 +4,7 @@ from pygame import *
 
 class Player(GameSprite):
 
-    def update(self):
+    def update_l(self):
 
         keys = key.get_pressed()
 
