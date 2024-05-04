@@ -14,10 +14,7 @@ background = transform.scale(image.load("jermbo.png"), (700, 500))
 
 fish = Player('fish.jpg',0, 100, 10, (70, 200), window)
 fish2 = Player('fish.jpg',500, 100, 10, (70, 200), window)
-fishes = sprite.Group()
 
-
-score = 0
 FPS = 30
 clock = time.Clock()
 
@@ -38,8 +35,8 @@ while game:
     if not finish:
         window.blit(background, (0, 0))
         fish.reset()
-        fish.update()
+        fish.update_l()
 
         fish2.reset()
-        fish2.update()
+        fish2.update_r()
         display.update()
